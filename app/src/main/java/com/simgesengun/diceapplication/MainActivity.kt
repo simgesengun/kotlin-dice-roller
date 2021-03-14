@@ -1,15 +1,10 @@
 package com.simgesengun.diceapplication
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
-import java.time.LocalDateTime
-import java.time.LocalTime
-import java.util.*
-import java.util.Calendar.HOUR_OF_DAY
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val dice1 = Dice(6)
         val dice2 = Dice(6)
+
         rollButton.setOnClickListener{
             rollDice(dice1, dice1Image)
             rollDice(dice2, dice2Image)
@@ -37,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    //Zarı ve ImageView'ını alarak ImageView'ı değiştirir
+    //Zarları sallar ve zarın ImageView'ı değiştirir
     fun rollDice(dice: Dice, diceImage : ImageView){
         when(dice.roll()) {
             1 -> diceImage.setImageResource(R.drawable.dice_1)
