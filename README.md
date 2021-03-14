@@ -1,4 +1,4 @@
 # :game_die: Kotlin Dice Roller
 ## Screenshots
-![screenshot0](screenshots/screen0.png){:width="10px"}
+![screenshot0](screenshots/screen0.png)
 
